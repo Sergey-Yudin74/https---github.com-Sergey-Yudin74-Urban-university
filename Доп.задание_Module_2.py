@@ -3,7 +3,7 @@ def numbers(num):
     password = []
    
     for a in range(1, 21):
-        for b in range(1, 21):
+        for b in range(a + 1, 21):
             if num % (a + b) == 0:
                 password.append(f"{a}{b}")
    
